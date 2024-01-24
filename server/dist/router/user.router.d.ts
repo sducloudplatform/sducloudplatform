@@ -48,12 +48,10 @@ export declare const UserRouter: import("@trpc/server").CreateRouterInner<import
             _meta: object;
             _ctx_out: import("../modules/trpc/buildCreateContext").Context;
             _input_in: {
-                uid?: number;
                 username?: string;
                 password?: string;
             };
             _input_out: {
-                uid?: number;
                 username?: string;
                 password?: string;
             };

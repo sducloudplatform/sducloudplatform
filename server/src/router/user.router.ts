@@ -29,10 +29,10 @@ export const UserRouter = router({
         }),  
 
      
-
+        // 测试api   http://localhost:3000/user.userSignUp
         userSignUp: procedure.input(
             z.object({
-                uid:z.number(),
+                // uid:z.number(),
                 username:z.string(),
                 password:z.string(),
 
@@ -41,7 +41,7 @@ export const UserRouter = router({
             // console.log(opts.input)
             const usersignup=await opts.ctx.inject(UserController)
             return await usersignup.signUp({
-            
+
                 username:opts.input.username,
                 password:opts.input.password
             })

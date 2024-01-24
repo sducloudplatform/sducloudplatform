@@ -73,12 +73,10 @@ export declare const appRouter: import("@trpc/server").Router<{
                 _meta: object;
                 _ctx_out: import("./modules/trpc/buildCreateContext").Context;
                 _input_in: {
-                    uid?: number;
                     username?: string;
                     password?: string;
                 };
                 _input_out: {
-                    uid?: number;
                     username?: string;
                     password?: string;
                 };
@@ -181,12 +179,10 @@ export declare const appRouter: import("@trpc/server").Router<{
                 _meta: object;
                 _ctx_out: import("./modules/trpc/buildCreateContext").Context;
                 _input_in: {
-                    uid?: number;
                     username?: string;
                     password?: string;
                 };
                 _input_out: {
-                    uid?: number;
                     username?: string;
                     password?: string;
                 };
@@ -292,12 +288,10 @@ export declare const appRouter: import("@trpc/server").Router<{
             _meta: object;
             _ctx_out: import("./modules/trpc/buildCreateContext").Context;
             _input_in: {
-                uid?: number;
                 username?: string;
                 password?: string;
             };
             _input_out: {
-                uid?: number;
                 username?: string;
                 password?: string;
             };

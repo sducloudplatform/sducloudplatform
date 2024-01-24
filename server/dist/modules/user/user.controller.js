@@ -33,11 +33,9 @@ let UserController = class UserController {
         const existUser = this.userService.FindOneByUsername(username);
         if (!existUser)
             throw new common_4.UnauthorizedException('User already exists');
-        const uuid = 123456;
         const createUserDto = {
             username: username,
             password: signUpDto.password,
-            uid: uuid
         };
         return this.userService.Create(createUserDto);
     }

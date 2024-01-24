@@ -17,7 +17,6 @@ exports.UserRouter = (0, trpc_context_1.router)({
             return greeting.getHello();
         }),
         userSignUp: trpc_context_1.procedure.input(zod_1.z.object({
-            uid: zod_1.z.number(),
             username: zod_1.z.string(),
             password: zod_1.z.string(),
         })).mutation(async (opts) => {

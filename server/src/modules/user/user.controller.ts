@@ -39,7 +39,7 @@ export class UserController {
     //查看此用户名是否已经使用
     const username =signUpDto.username;
     const existUser= this.userService.FindOneByUsername(username)
-    if(!existUser)
+    if(existUser)
         throw new UnauthorizedException('User already exists')
     // const existUser = await this.prisma.user.findUnique({
     //     where: {
@@ -47,11 +47,11 @@ export class UserController {
     //     },
     //   })
     //生成一个uid，具体还没实现
-    const uuid=123456
+    // const uuid=123456
     const createUserDto={
         username:username,
         password:signUpDto.password,
-        uid:uuid
+        // uid:uuid
     }
         
     
