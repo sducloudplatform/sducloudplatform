@@ -31,7 +31,7 @@ let UserController = class UserController {
     signUp(signUpDto) {
         const username = signUpDto.username;
         const existUser = this.userService.FindOneByUsername(username);
-        if (!existUser)
+        if (existUser)
             throw new common_4.UnauthorizedException('User already exists');
         const createUserDto = {
             username: username,
